@@ -1,0 +1,324 @@
+html {
+  -webkit-text-size-adjust: none;
+  /* Prevent font scaling in landscape */
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+img {
+  border-style: none;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+input, textarea, select {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  vertical-align: middle;
+  color: #000;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+form fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+*:focus {
+  outline: none;
+}
+
+input::-webkit-input-placeholder {
+  color: #bebebe;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: #bebebe;
+}
+
+/***************************************************              GENERAL STYLES             ***************************************************/
+
+h1 {
+  font: 35px sans-serif;
+}
+
+h2 {
+  font: 25px sans-serif;
+}
+
+h3 {
+  font: 23px sans-serif;
+}
+
+h4 {
+  font: 21px sans-serif;
+  color: #325a8c;
+  font-weight: bold;
+}
+
+h5 {
+  font: 18px sans-serif;
+}
+
+h6 {
+  font: 16px sans-serif;
+}
+
+p {
+  font: 18px sans-serif;
+  color: #44403f;
+  font-weight: bold;
+}
+
+strong {}
+
+/**********************************************************              PC - LARGE             *************************************************/
+
+/*@media (min-width: 1218px) and (max-width: 10000px) {}*/
+
+/* wrapper */
+
+#wrapper {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.layout {
+  margin: 0 auto;
+  position: relative;
+  width: 960px;
+}
+
+#footer {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 0 0;
+  padding: 0 0;
+}
+
+#main {
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  position: relative;
+  z-index: 0;
+}
+
+#header {
+  width: 100%;
+  display: block;
+  position: relative;
+}
+
+/****************************************************************              PC              ***************************************************/
+
+@media (min-width: 978px) and (max-width: 1217px) {}
+
+/****************************************************************              TABLET              ***********************************************/
+
+@media (min-width: 768px) and (max-width: 977px) {
+  .layout {
+    margin: 0 auto;
+    position: relative;
+    width: 768px;
+  }
+}
+
+/****************************************************************              MOBILE              ***********************************************/
+
+@media (min-width: 320px) and (max-width:767px) {
+  .layout {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/********************** Dots  **************************/
+
+#content .dots {
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  height: 1px;
+  background-position: 0 0;
+  background-repeat: repeat-x;
+  background-size: 2px 100%;
+  background-image: url(../images/img-dots.png);
+  margin: 20px auto;
+}
+
+#content .boxes {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#content .boxes li {
+  display: block;
+  width: 310px;
+  margin: 0 0 13px 0;
+}
+
+#content .boxes .image {
+  width: 310px;
+  height: 310px;
+  background: #e9f1f8;
+  border: 1px solid #d3e6f6;
+  margin: 10px 0 0 0;
+}
+
+#content .boxes .image img {
+  width: 290px;
+  height: 290px;
+  padding: 10px;
+  border: 0;
+}
+
+#content .boxes .priceall {
+  display: block;
+  position: relative;
+  float: left;
+  margin: 10px 0 0 0;
+}
+
+#content .boxes .codeall {
+  display: block;
+  position: relative;
+  float: right;
+  margin: 10px 0 0 0;
+}
+
+#content .boxes .priceall .us {
+  color: #349031;
+}
+
+#content .boxes .codeall .ae {
+  color: #696663;
+}
+
+#content .navigation ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 63px;
+  border: 1px solid #d3e6f6;
+  background-color: #e9f1f8;
+}
+
+#content .navigation li.prev {
+  display: inline-block;
+  width: 132px;
+  height: 48px;
+  background-color: #b4c3d2;
+  margin: 0 0 0 10px;
+  text-align: center;
+}
+
+#content .navigation li.prev h4 {
+  color: #ffff;
+  padding: 12px;
+}
+
+#content .navigation .one-two-three {
+  display: inline-block;
+  border: 0;
+}
+
+#content .navigation .one-two-three li.one {
+  display: inline-block;
+  width: 47px;
+  height: 48px;
+  background-color: #2d5280;
+  text-align: center;
+}
+
+#content .navigation .one-two-three li.one h4 {
+  color: #ffff;
+  padding: 12px;
+}
+
+#content .navigation .one-two-three li.two, li.three {
+  display: inline-block;
+  width: 47px;
+  height: 48px;
+  background-color: #4989c4;
+  text-align: center;
+}
+
+#content .navigation .one-two-three li.two:hover, li.three:hover {
+  background-color: #2d5280;
+}
+
+#content .navigation .one-two-three li.two h4, li.three h4 {
+  color: #ffff;
+  padding: 12px;
+}
+
+#content .navigation .one-two-three li.two {
+  margin: 0 10px 0;
+}
+
+#content .navigation li.next {
+  display: inline-block;
+  width: 93px;
+  height: 48px;
+  background-color: #4989c4;
+  margin: 0 10px 0 0;
+  text-align: center;
+}
+
+#content .navigation li.next:hover {
+  background-color: #2d5280;
+}
+
+#content .navigation li.next h4 {
+  color: #ffff;
+  padding: 12px;
+}
